@@ -10,10 +10,10 @@
   <body>
     <header>
       <div class="container">
-        <h1><img src="imagenes/logo.png" alt="Logo de la barberia Alura"></h1>
+        <h1><a href="/index.html"><img class="logo" src="/imagenes/logo.png" alt="logo de la barberia alura"></a></h1>
         <nav>
           <ul>
-            <li><a href="/HTML_CSS_Parte1/index.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="productos.html">Productos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
@@ -21,67 +21,69 @@
       </div>
     </header>
     <main>
-      <form>
-        <label for="nombreyapellido">Nombre y Apellido <input type="text" id="nombreyapellido" class="input-patron" required></label>
+      <div class="container-form">
+        <form>
+          <label for="nombreyapellido">Nombre y Apellido <input type="text" id="nombreyapellido" class="input-patron" required></label>
 
-        <label for="email">Correo Electrónico <input type="email" id="email" class="input-patron" required placeholder="email@dominio.com"></label>
+          <label for="email">Correo Electrónico <input type="email" id="email" class="input-patron" required placeholder="email@dominio.com"></label>
 
-        <label for="telefono">Teléfono <input type="tel" id="telefono" class="input-patron" required placeholder="XXX - XXXXXX"></label>
+          <label for="telefono">Teléfono <input type="tel" id="telefono" class="input-patron" required placeholder="XXX - XXXXXX"></label>
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" rows="10" cols="70" class="input-patron" required>
-        </textarea>
-        
-        <fieldset>
-          <legend>¿Cómo le gustaría que lo contactemos?</legend>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="10" cols="70" class="input-patron" required>
+          </textarea>
+          
+          <fieldset>
+            <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
-          <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
 
-          <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
 
-          <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
-        </fieldset>
-        
-        <fieldset>
-          <legend>¿En cúal horario prefiere ser atendido?</legend>
-          <select>
-            <option>Mañana</option>
-            <option>Tarde</option>
-            <option>Noche</option>
-          </select>
-        </fieldset>        
+            <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>¿En cúal horario prefiere ser atendido?</legend>
+            <select>
+              <option>Mañana</option>
+              <option>Tarde</option>
+              <option>Noche</option>
+            </select>
+          </fieldset>        
 
-        <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barberia Alura?</label>
-        <input class="enviar" type="submit" value="Enviar formulario">
-      </form>
-      <!--Table start-->
-      <table>
-        <thead>
-          <tr>
-            <th>Días</th>
-            <th>Horarios</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Lunes</td>
-            <td>08h - 20h</td>
-          </tr>
-          <tr>
-            <td>Miércoles</td>
-            <td>08h - 20h</td>
-          </tr>
-          <tr>
-            <td>Viernes</td>
-            <td>08h - 20h</td>
-          </tr>
-        </tbody>
-      </table>
-      <!--Table end-->
+          <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barberia Alura?</label>
+          <input class="enviar" type="submit" value="Enviar formulario">
+        </form>
+        <!--Table start-->
+        <table>
+          <thead>
+            <tr>
+              <th>Días</th>
+              <th>Horarios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>08h - 20h</td>
+            </tr>
+            <tr>
+              <td>Miércoles</td>
+              <td>08h - 20h</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>08h - 20h</td>
+            </tr>
+          </tbody>
+        </table>
+        <!--Table end-->
+      </div>
     </main>
     <footer>
-      <img src="imagenes/logo-blanco.png" alt="Logo de la barberia Alura">
-      <p class="copyright">&copy Copyright Barbería Alura - 2022</p>
+      <img src="/imagenes/logo-blanco.png" alt="logo de la barberia alura de color blanco">
+      <p class="copyright">&copy Copyright Barbería Alura - Designed by Manuel Villanueva</p>
     </footer>
   </body>
 </html>

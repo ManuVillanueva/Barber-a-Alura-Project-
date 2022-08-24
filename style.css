@@ -9,13 +9,20 @@ header {
 
 .container {
   width: 940px; 
+  height: 120px;
   position: relative;
-  margin: 0 auto;
+  margin-left: 20%;
+}
+
+.logo {
+  width: 9em;
+  height: 9em;
+  padding-bottom: 10px;
 }
 
 nav {
   position: absolute;
-  top: 110px;
+  top: 40px;
   right: 0;
 }
 
@@ -86,15 +93,22 @@ footer {
   text-align: center;
   background: url(imagenes/bg.jpg);
   padding: 40px;
+  height: 15em;
 }
 
 .copyright {
   color: white;
   font-size: 13px;
-  margin: 20px;
+  margin: auto;
 }
 
 /*Styles for contact page*/
+
+.container-form {
+  display: flexbox;
+  margin: 5em 0 5em 40em;
+
+}
 
 form {
   margin: 40px 0 0 10px;
@@ -136,7 +150,7 @@ form label, form legend{
 }
 
 table {
-  margin: 40px 40px;
+  margin:5em 0 5em 15em;
 }
 
 thead {
@@ -154,6 +168,8 @@ td, th {
 
 .banner {
   width: 100%;
+  height: 50em;
+  resize: block;
 }
 
 .principal {
@@ -245,15 +261,15 @@ td, th {
   margin: 1em auto;
 }
 
-/*Responsive design*/
+/*Responsive design - home*/
 
 @media screen and (max-width: 480px) {
   h1 {
     text-align: center;
   }
 
-  nav {
-    position: static;
+  nav, .logo {
+    position: fixed;
   }
   
   .container, .principal, .mapa-contenido, .contenido-diferenciales, .video {
@@ -264,3 +280,7 @@ td, th {
     width: 100%;
   }
 }
+
+/*Responsive design - product*/
+
+/*Responsive design - contact*/
